@@ -47,6 +47,6 @@
     "sinon": "^19.0.2"
   },
   "lint-staged": {
-    "*.{js,cjs}": "eslint --ext .js,.cjs ."
+    "*.{js,cjs}": "eslint"
   }
 }
