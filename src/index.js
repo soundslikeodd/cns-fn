@@ -8,7 +8,7 @@ export default (
     const isObject = typeof c === 'object';
     if (isObject) {
       // eslint-disable-next-line no-undef
-      console.error('cns-fn incountered an element of type object, skipping');
+      console.error('cns-fn encountered an element of type object, skipping');
       return a;
     }
     return [...a, c];
