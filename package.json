@@ -1,0 +1,52 @@
+{
+  "name": "cns-fn",
+  "version": "1.0.0",
+  "description": "Simple function for managing class names.",
+  "main": "commonjs/index.js",
+  "module": "./src/index.js",
+  "type": "module",
+  "exports": {
+    ".": {
+      "require": "./commonjs/index.js",
+      "default": "./src/index.js"
+    }
+  },
+  "files": [
+    "./commonjs/*",
+    "./src/*"
+  ],
+  "engines": {
+    "node": ">=16"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/soundslikeodd/cns-fn.git"
+  },
+  "scripts": {
+    "prepack": "babel ./src -d commonjs",
+    "test": "mocha",
+    "pretest": "eslint",
+    "prepare": "husky install"
+  },
+  "keywords": [
+    "javascript",
+    "classname"
+  ],
+  "author": "soundslikeodd",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.26.4",
+    "@babel/core": "^7.26.0",
+    "@babel/plugin-transform-modules-commonjs": "^7.26.3",
+    "@eslint/js": "^9.17.0",
+    "assert": "^2.1.0",
+    "eslint": "^9.17.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.2.11",
+    "mocha": "^11.0.1",
+    "sinon": "^19.0.2"
+  },
+  "lint-staged": {
+    "*.{js,cjs}": "eslint --ext .js,.cjs ."
+  }
+}
