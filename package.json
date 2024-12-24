@@ -1,6 +1,6 @@
 {
   "name": "@soundslikeodd/cns-fn",
-  "version": "0.0.1",
+  "version": "1.0.1",
   "description": "Simple function for managing class names.",
   "main": "commonjs/index.js",
   "module": "./src/index.js",
